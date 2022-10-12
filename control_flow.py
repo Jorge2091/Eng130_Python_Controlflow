@@ -30,3 +30,8 @@
 
 age = input("How old are you now?")
 if age > "117":
+    print("please retry again and input correct value for age")
+elif age >"17":
+    print("You can view any movie you like, no restriction on you")
+elif age > "15":
+    print("You can only view movies which are 16 and above")
