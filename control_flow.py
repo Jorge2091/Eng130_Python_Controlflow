@@ -35,21 +35,25 @@ while promt:
     else:
         print("please input only digits")
 
-age = int(age)
+user_age = int(age)
 
-if age > 117:
-    print("please retry again and input correct value for age")
-elif age >17:
-    print("You can view any movie you like, no restriction on you")
-elif age > 15:
-    print("You can only view movies which are 16 and under")
-elif age > 14:
-    print("you can only view movies of 15 and under")
-elif age > 11:
-    print("you can view 12a movies and under")
-elif age > 7:
-    print("you can view pg movies and under")
-elif age > 3:
-    print("you can only watch U rated movies")
-else:
-    print("Too young")
+def movie_rating(age):
+    if age > 117:
+        print("please retry again and input correct value for age")
+    elif age >17:
+        print("You can view any movie you like, no restriction on you")
+    elif age > 15:
+        print("You can only view movies which are 16 and under")
+    elif age > 14:
+        print("you can only view movies of 15 and under")
+    elif age > 11:
+        print("you can view 12a movies and under")
+    elif age > 7:
+        print("you can view pg movies and under")
+    elif age > 3:
+        print("you can only watch U rated movies")
+    else:
+        print("Too young")
+    return (f"Your age is {age}")
+
+print(movie_rating(user_age))
